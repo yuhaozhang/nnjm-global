@@ -1,6 +1,8 @@
 Neural Network Joint Language Model (NNJM) using Python/Theano
 ==========
 
+**Update**: You can find the **technical report** corresponding to this code base [here](http://web.stanford.edu/~zyh/projects/cs224n/224n_report.pdf).
+
 This is an implementation of a neural network joint language model (NNJM) using Python. NNJM is proposed in the context of machine translation and jointly model target language and its aligned source language to improve machine translation performance. The implementation presented here is based on a paper authored by BBN: [Fast and Robust Neural Network Joint Models for Statistical Machine
 Translation](http://acl2014.org/acl2014/P14-1/pdf/P14-1129.pdf). Besides, this implementation also allows for an extension of the NNJM model, which utilizes the entire source sentence (global source context) to improve the model peroformance measured by perplexity. We called this NNJM-Global for simplicity. Thus, this code could run in three modes:
 
