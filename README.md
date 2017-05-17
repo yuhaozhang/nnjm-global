@@ -1,7 +1,7 @@
 Neural Network Joint Language Model (NNJM) using Python/Theano
 ==========
 
-**Update**: You can find the **technical report** corresponding to this code base here: [Neural Network Joint Language Model: An Investigation and An Extension With Global Source Context](http://web.stanford.edu/~zyh/projects/cs224n/224n_report.pdf), by Yuhao Zhang and Charles R. Qi.
+**Update**: You can find the **technical report** corresponding to this code base here: [Neural Network Joint Language Model: An Investigation and An Extension With Global Source Context](http://yuhao.im/files/ZhangQi_NNJM.pdf), by Yuhao Zhang and Charles R. Qi.
 
 This is an implementation of a neural network joint language model (NNJM) using Python. NNJM is proposed in the context of machine translation and jointly model target language and its aligned source language to improve machine translation performance. The implementation presented here is based on a paper authored by BBN: [Fast and Robust Neural Network Joint Models for Statistical Machine
 Translation](http://acl2014.org/acl2014/P14-1/pdf/P14-1129.pdf). Besides, this implementation also allows for an extension of the NNJM model, which utilizes the entire source sentence (global source context) to improve the model peroformance measured by perplexity. We called this NNJM-Global for simplicity. Thus, this code could run in three modes:
@@ -19,8 +19,8 @@ Built on top of Theano, our code could also be run on GPU supported by CUDA with
 - README      - this file
 - code/           - directory contains all the python code files.
 - data/: each subdirectory contains 3 files -.(en|zh|align) where -.align contains alignments for a pair of sentences per line. Each line is a series of pairs Chinese positions - English positions.
-	- bitex/        - toy train data
-	- tune/         - tune data
+	- bitex/        - toy training data
+	- tune/         - tuning data
 	- p1r6_dev/     - test data
 
 ## Dependency
